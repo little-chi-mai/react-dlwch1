@@ -49,16 +49,11 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* flex: 1 1 100%; */
 }
 
 .background > * {
   color: white;
 }
-
-/* .background > p {
-  margin: 0.5rem 0;
-} */
 
 .background-padding {
   padding: 0 2.5rem 4.5rem 2.5rem;
@@ -69,7 +64,7 @@ button {
   width: 213px;
   height: 203px;
   left: -10.08px;
-  bottom: -114px;
+  bottom: -115px;
   background: linear-gradient(
     117.38deg,
     #e7e6ff 10.73%,
@@ -151,7 +146,6 @@ button {
 .input-wrapper > input {
   width: 100%;
   background-color: white;
-  /* padding-right: 15px; */
   padding-left: 1.5rem;
 }
 
@@ -249,19 +243,15 @@ button {
     width: 40%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
-    /* padding-bottom: 7rem; */
-    /* flex: 1 0 40%; */
   }
 
   .planetoid {
     width: 220px;
     height: 203.64px;
     left: -28.08px;
-    top: 311.42px;
+    bottom: -68.42px;
     border-radius: 10rem;
-
     clip-path: inset(0px 0px 67px 28px);
   }
 
@@ -269,7 +259,7 @@ button {
     width: 36.08px;
     height: 35.17px;
     left: 158.38px;
-    top: 352.45px;
+    bottom: 44.45px;
     border-radius: 5rem;
   }
 
@@ -287,8 +277,6 @@ button {
 
 @media screen and (min-width: 1200px) {
   .form {
-    /* max-width: 950px;
-width: 100%; */
     justify-content: space-evenly;
   }
   .calculator {
