@@ -47,7 +47,7 @@ export default function FormContent(props) {
       <label>
         Enter your total taxable income for the income year *
         <div disabled={props.disabled} className="input-wrapper">
-          <p />
+          <p className="icon-holder" />
           <input
             className="form-input"
             value={props.income}
