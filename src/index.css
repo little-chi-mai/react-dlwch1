@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+select,
+input {
+  display: block;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+h4,
+label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+.background {
+  background-color: #8477c9;
+  box-shadow: 0px 4px 4px #e7e7ff;
+  border-radius: 5px;
+  min-height: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex: 1 1 100%; */
+}
+
+.background > * {
+  color: white;
+}
+
+/* .background > p {
+  margin: 0.5rem 0;
+} */
+
+.background-padding {
+  padding: 0 2.5rem 4.5rem 2.5rem;
+}
+
+.planetoid {
+  position: absolute;
+  width: 213px;
+  height: 203px;
+  left: -10.08px;
+  bottom: -114px;
+  background: linear-gradient(
+    117.38deg,
+    #e7e6ff 10.73%,
+    rgba(231, 230, 255, 0) 84.05%
+  );
+  border-radius: 10rem;
+  clip-path: inset(0px 0px 114px 10px);
+  z-index: -10;
+}
+
+.moon {
+  position: absolute;
+  width: 36.08px;
+  height: 35.17px;
+  left: 152.38px;
+  bottom: 32.45px;
+  background: #e7e7ff;
+  box-shadow: -10px 13px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5rem;
+  z-index: -5;
+}
+
+.info-box {
+  border-radius: 5px;
+  border: 2px #8477c9 solid;
+  height: 40px;
+  box-shadow: 0px 4px 8px #e7e7ff;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  margin: 0.7rem 0;
+}
+
+.info-box > p {
+  color: #8477c9;
+  font-size: 12px;
+}
+
+.info-box__dot {
+  height: 23px;
+  width: 23px;
+  border: 2px #8477c9 solid;
+  border-radius: 50%;
+  display: inline-flex;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: 0.5rem;
+}
+
+.calculator {
+  padding: 1rem 2.5rem;
+}
+
+.form-input {
+  height: 40px;
+  width: 100%;
+  padding-left: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 0.7rem;
+  margin-top: 0.5rem;
+  background-color: white;
+  border: 1px rgb(161, 161, 161) solid;
+  border-radius: 5px;
+}
+
+.form-input:disabled {
+  color: #848484 !important;
+  background-color: #e4e4e4;
+  border: none;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper > input {
+  width: 100%;
+  background-color: white;
+  /* padding-right: 15px; */
+  padding-left: 1.5rem;
+}
+
+.input-wrapper > input:focus {
+  outline: none !important;
+  border: 1px solid rgb(180, 179, 179);
+  border-radius: 5px;
+}
+
+.input-wrapper:after {
+  position: absolute;
+  content: '.00';
+  right: 2rem;
+  top: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(134, 134, 134);
+}
+
+.input-wrapper > p:after {
+  position: absolute;
+  content: '$';
+  left: 2%;
+  top: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(134, 134, 134);
+}
+
+.calculate-btn {
+  width: 100%;
+  height: 43px;
+  margin-top: 0.5rem;
+  background-color: #8477c9;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px #e7e7ff;
+  border: none;
+}
+
+.calculator > button {
+  color: #8477c9;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+}
+
+.result-total {
+  height: 70px;
+  background-color: white;
+  color: #8477c9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.tax-breakdowns {
+  height: 48px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tax-breakdowns__bracket {
+  color: black;
+}
+
+.tax-breakdowns__number {
+  color: #8477c9;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 770px) {
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+  }
+
+  .background {
+    min-height: 448px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding-bottom: 7rem; */
+    /* flex: 1 0 40%; */
+  }
+
+  .planetoid {
+    width: 220px;
+    height: 203.64px;
+    left: -28.08px;
+    top: 311.42px;
+    border-radius: 10rem;
+
+    clip-path: inset(0px 0px 67px 28px);
+  }
+
+  .moon {
+    width: 36.08px;
+    height: 35.17px;
+    left: 158.38px;
+    top: 352.45px;
+    border-radius: 5rem;
+  }
+
+  .calculator {
+    width: 45%;
+  }
+
+  .result {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    /* max-width: 950px;
+width: 100%; */
+    justify-content: space-evenly;
+  }
+  .calculator {
+    width: 35%;
+  }
+
+  .background {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .calculator {
+    width: 30%;
+  }
+
+  .background {
+    width: 35%;
+  }
+}
