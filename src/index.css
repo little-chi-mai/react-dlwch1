@@ -137,6 +137,7 @@ button {
   color: #848484 !important;
   background-color: #e4e4e4;
   border: none;
+  opacity: 0.7;
 }
 
 .input-wrapper {
