@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import InfoBox from '../InfoBox';
 import FormContent from '../FormContent';
-import TaxBracket from '../TaxBracket';
+import Detail from '../Detail';
 import SubmitButton from '../SubmitButton';
 import TaxFormula from '../../helpers/TaxFormula';
 import TaxBrackets from '../../helpers/TaxBrackets';
@@ -21,7 +21,7 @@ export default function CalculatorForm() {
 
   function breakdown() {
     return taxDetails.map((bracket, index) => (
-      <TaxBracket
+      <Detail
         from={bracket.from}
         to={bracket.to}
         tax={bracket.tax}
